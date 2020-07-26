@@ -1,0 +1,15 @@
+server:
+  port: 9901
+#  connect PostgreSQL database
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/payment
+    username: payment
+    password: 123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+
